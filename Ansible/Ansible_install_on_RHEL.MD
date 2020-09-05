@@ -30,7 +30,7 @@
    ```
 1. Using key-based authentication is advised. If you are still at the learning stage use password-based authentication (on Control node and Managed host)
    ```sh 
-   # sed command replaces "PasswordAuthentication no to yes" without editing file 
+   # sed command replaces "PasswordAuthentication no to yes" without editing files
     sed -ie 's/PasswordAuthentication no/PasswordAuthentication yes/' /etc/ssh/sshd_config
     sudo service sshd reload
    ``` 
